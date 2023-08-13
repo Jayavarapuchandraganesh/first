@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            .main
+            {
+                border:solid 5px;
+                border-color:black;
+                border-right:40%;
+                border-radius: 0%;
+                padding-left: 10%;
+                padding-top: 5%;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+       <form >
+        <lable>Search:</lable><input type="search" name="search" placeholder="search"><br>
+        <br><br>
+        <lable for="full name">NAME:</lable><input type="text" name="user name" required id="fullname" minlength="3" placeholder="FULL NAME"><br>
+        <br>
+        <lable for="age">Age</lable><input type="number" name="age" placeholder="age"><br><br>
+        <lable for="password">Password:</lable><input type="password" name="password" placeholder="password"><br><br>
+        <lable for="male">MALE:</lable><input type="radio" name="gender" value="male" id="male">
+        <label for="female">FEMALE:</label><input type="radio" name="gender" value="female"id="female">
+        <label for="others">OTHERS:</label><input type="radio" name="gender" value="others" id="others"><br><br>
+        <input name="file" type="file" ><br><br>
+        <lable for="i agree">I agrre terms and conditions</lable><input type="checkbox" name="i agree" id="i agree" required><br><br>
+
+        <textarea name="text area" rows="5" cols="50" placeholder="ENTER YOUR TEXT HERE"></textarea><br><br>
+        <input type="submit">
+       </form>
+        </div>
+       
+    </body>
+</html>

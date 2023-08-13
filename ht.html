@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+       input[type=button]
+        {
+            font-size:120%;
+            color:aqua;
+            background-color:black;
+        }
+        body
+        {
+            background-color: bisque;
+            background-size:200%;
+            background-repeat:no-repeat;
+            background-position: center;
+
+        }
+       
+    </style>
+<head>
+   
+    <title>Documet</title>
+</head>
+<body>
+    INPUT1:<input type="text" id= "num1"  onclick="colou()"><br>
+    INPUT2:<input type ="text" id= "num2" onclick="colou()"><br>
+    <input type="button" value="submit" onclick="submit()"><br>
+    <p id="result"></p>
+    <p id="resul"></p>
+    <p id="resu"></p>
+    <p id="res"></p>
+
+    
+    <script>
+        function submit(){
+        var num1=Number(document.getElementById("num1").value);
+        var num2=Number(document.getElementById("num2").value);
+        var add=num1+num2;
+        var sub=num1-num2;
+        var mul=num1*num2;
+        var div=num1/num2;
+        //document.write("the sum is "+add+"<br>");
+        //document.write("the sub is "+sub+"<br>");
+        //document.write("the sub is "+mul+"<br>");
+        //document.write("the sub is "+div+"<br>");
+        document.getElementById("result").innerHTML="the add is "+add;
+        document.getElementById("resul").innerHTML="the sub is "+sub;
+        document.getElementById("resu").innerHTML="the mul is "+mul;
+        document.getElementById("res").innerHTML="THE div is"+div;
+        }
+        function colou()
+        {
+        document.getElementById("num1").style.backgroundColor="lightgreen";
+        document.getElementById("num2").style.backgroundColor="lightgreen";
+        }
+
+       /* function sub(){
+        var num1=Number(document.getElementById("num1").value);
+        var num2=Number(document.getElementById("num2").value);
+        var sub=num1-num2;
+        document.write("the sum is "+sub);
+        }
+
+        function mul(){
+        var num1=Number(document.getElementById("num1").value);
+        var num2=Number(document.getElementById("num2").value);
+        var mul=num1*num2;
+        document.write("the mul is "+mul);
+        }
+
+        function div(){
+        var num1=Number(document.getElementById("num1").value);
+        var num2=Number(document.getElementById("num2").value);
+        var div=num1/num2;
+        document.write("the div is "+div);
+        }*/
+    </script>
+    </body>
+</html>
